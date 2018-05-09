@@ -10,7 +10,6 @@
 #include <ngx_http.h>
 #include <ngx_crypt.h>
 
-
 #define NGX_HTTP_AUTH_BUF_SIZE  2048
 
 

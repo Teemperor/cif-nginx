@@ -166,7 +166,7 @@ esac
 
 
 # stop on warning
-CFLAGS="$CFLAGS -Werror"
+CFLAGS="$CFLAGS -Werror  -Wno-attributes"
 
 # debug
 CFLAGS="$CFLAGS -g"

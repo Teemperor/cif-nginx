@@ -8,6 +8,7 @@
 #ifndef _NGX_HTTP_REQUEST_H_INCLUDED_
 #define _NGX_HTTP_REQUEST_H_INCLUDED_
 
+#include <CIF.h>
 
 #define NGX_HTTP_MAX_URI_CHANGES           10
 #define NGX_HTTP_MAX_SUBREQUESTS           50
@@ -231,7 +232,7 @@ typedef struct {
 #endif
 
     ngx_str_t                         user;
-    ngx_str_t                         passwd;
+    CIFLabel("Password") ngx_str_t    passwd;
 
     ngx_array_t                       cookies;
 

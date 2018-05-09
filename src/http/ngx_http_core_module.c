@@ -1854,7 +1854,8 @@ ngx_http_map_uri_to_path(ngx_http_request_t *r, ngx_str_t *path,
 ngx_int_t
 ngx_http_auth_basic_user(ngx_http_request_t *r)
 {
-    ngx_str_t   auth, encoded;
+    CIFLabel("Password") ngx_str_t   auth;
+    CIFLabel("Password") ngx_str_t   encoded;
     ngx_uint_t  len;
 
     if (r->headers_in.user.len == 0 && r->headers_in.user.data != NULL) {
